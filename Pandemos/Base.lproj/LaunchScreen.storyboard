@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" initialViewController="01J-lp-oVM">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="EHf-IW-A2E">
+            <objects>
+                <viewController id="01J-lp-oVM" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Llm-lL-Icb"/>
+                        <viewControllerLayoutGuide type="bottom" id="xb3-aO-Qok"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Ze5-6b-2t3">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Logo2" translatesAutoresizingMaskIntoConstraints="NO" id="JZE-zD-8Fe">
+                                <rect key="frame" x="180" y="163.5" width="240" height="200"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="200" id="B3b-Gn-m6e"/>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="480" id="IdH-YP-o9q"/>
+                                    <constraint firstAttribute="width" secondItem="JZE-zD-8Fe" secondAttribute="height" multiplier="8:7" id="WrG-AG-2cB"/>
+                                    <constraint firstAttribute="width" secondItem="JZE-zD-8Fe" secondAttribute="height" multiplier="160:129" id="ld0-B4-lQh"/>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="256" id="pyd-EG-B9I"/>
+                                    <constraint firstAttribute="width" constant="240" id="rms-xU-EtE"/>
+                                </constraints>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="IdH-YP-o9q"/>
+                                        <exclude reference="WrG-AG-2cB"/>
+                                        <exclude reference="ld0-B4-lQh"/>
+                                        <exclude reference="pyd-EG-B9I"/>
+                                    </mask>
+                                </variation>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="JZE-zD-8Fe" firstAttribute="centerY" secondItem="Ze5-6b-2t3" secondAttribute="centerY" constant="-36.5" id="773-89-7gY"/>
+                            <constraint firstItem="JZE-zD-8Fe" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="n9U-z9-6Kc"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="launchAppImage" destination="JZE-zD-8Fe" id="fL3-tx-aZz"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="iYj-Kq-Ea1" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="53" y="375"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Logo2" width="100" height="100"/>
+    </resources>
+</document>

@@ -1,0 +1,10 @@
+{
+  "applications": {
+    "Pandemos": {
+      "applicationId": "dCNWcarB6Tv1iW8vCT1c7UATrEwZ3AFq7OzwAs7A"
+    },
+    "_default": {
+      "link": "Pandemos"
+    }
+  }
+}
